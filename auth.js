@@ -52,6 +52,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
       if (isLogin) {
         isLogin = false;
+        document.getElementById("username").value = "";
+        document.getElementById("email-field").value = "";
+        document.getElementById("password").value = "";
         // Update text
         document.getElementById("formTitle").innerText =
           "Register for an account";
@@ -73,6 +76,9 @@ document.addEventListener("DOMContentLoaded", () => {
         document.getElementById("signinBtn").innerText = "sign up";
       } else {
         isLogin = true;
+        document.getElementById("username").value = "";
+        document.getElementById("email-field").value = "";
+        document.getElementById("password").value = "";
         // Update text
         document.getElementById("formTitle").innerText =
           "Please log in to your account";
